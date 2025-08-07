@@ -1,3 +1,4 @@
+/*NAV*/
 .form-white.input-group>.form-control:focus {
     border-color: #fff;
     box-shadow: inset 0 0 0 1px #fff;
@@ -35,7 +36,7 @@ nav i {
     /*think again*/
 }
 
-/*feed*/
+/*FEED*/
 .copilot-suggestions li {
     padding: 10px;
     border-radius: 20px;
@@ -47,6 +48,39 @@ nav i {
     border-radius: 20px;
 
 }
-.card-body .text-muted{
+
+.card-body .text-muted {
     font-size: 12px;
+}
+
+.main .btn {
+    padding: 3px 12px;
+    font-size: 12px;
+
+    height: 100%;
+}
+
+strong {
+    font-size: 14px;
+}
+
+.headerofcards {
+    font-size: 14px;
+}
+
+.feedimg {
+    height: 20px;
+}
+
+.repo-language-color {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: var(--borderWidth-thin) solid var(--borderColor-translucent);
+    border-radius: 50%;
+}
+.feed-ranking{
+    font-size: 14px;
 }
