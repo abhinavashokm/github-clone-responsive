@@ -15,7 +15,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top px-3 py-2">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom px-3 py-2">
         <div class="container-fluid">
             <!-- GitHub Logo -->
             <a class="navbar-brand d-flex align-items-center me-3" href="#">
@@ -51,36 +51,38 @@
     <div class="container-fluid mt-3">
         <div class="row">
             <!-- Left Sidebar (Repositories list) -->
-            <div class="col-lg-3 col-md-3 border-end px-3">
-                <div class="d-flex align-items-center justify-content-between ">
-                    <h6 class="fw-bold mb-3">Top repositories</h6>
-                    <button class="btn btn-success btn-sm" type="button">New</button>
-                </div>
-                <form class="my-2" role="search">
-                    <input class="form-control form-control-sm bg-body-secondary border-1 text-white rounded-1"
-                        type="search" placeholder="Find a repository..." aria-label="Search">
-                </form>
+            <div class="col-xl-3 col-md-3 border-end px-3">
+                <div style="position: sticky; top: 1rem;">
+                    <div class="d-flex align-items-center justify-content-between ">
+                        <h6 class="fw-bold mb-3">Top repositories</h6>
+                        <button class="btn btn-success btn-sm" type="button">New</button>
+                    </div>
+                    <form class="my-2" role="search">
+                        <input class="form-control form-control-sm bg-body-secondary border-1 text-white rounded-1"
+                            type="search" placeholder="Find a repository..." aria-label="Search">
+                    </form>
 
-                <ul class="list-unstyled d-flex flex-column gap-1">
-                    <li class="d-flex gap-1 align-items-center"><img class="profile-img-repo" src="./images/profile.png"
-                            alt=""><a href="#"
-                            class="text-decoration-none text-black d-block py-1">abhinavashokm/gpt</a></li>
-                    <li class="d-flex gap-1 align-items-center"><img class="profile-img-repo" src="./images/profile.png"
-                            alt=""><a href="#"
-                            class="text-decoration-none text-black d-block py-1">abhinavashokm/whisper</a></li>
-                    <li class="d-flex gap-1 align-items-center"><img class="profile-img-repo" src="./images/profile.png"
-                            alt=""><a href="#"
-                            class="text-decoration-none text-black d-block py-1">abhinavashokm/clip</a></li>
-                    <li class="d-flex gap-1 align-items-center"><img class="profile-img-repo" src="./images/profile.png"
-                            alt=""><a href="#"
-                            class="text-decoration-none text-black d-block py-1">abhinavashokm/chatgpt-ui</a></li>
-                    <li><a href="#" class="text-decoration-none d-block py-1 text-primary text-muted fs-6 ">show
-                            more</a></li>
-                </ul>
+                    <ul class="list-unstyled d-flex flex-column gap-1">
+                        <li class="d-flex gap-1 align-items-center"><img class="profile-img-repo"
+                                src="./images/profile.png" alt=""><a href="#"
+                                class="text-decoration-none text-black d-block py-1">abhinavashokm/gpt</a></li>
+                        <li class="d-flex gap-1 align-items-center"><img class="profile-img-repo"
+                                src="./images/profile.png" alt=""><a href="#"
+                                class="text-decoration-none text-black d-block py-1">abhinavashokm/whisper</a></li>
+                        <li class="d-flex gap-1 align-items-center"><img class="profile-img-repo"
+                                src="./images/profile.png" alt=""><a href="#"
+                                class="text-decoration-none text-black d-block py-1">abhinavashokm/clip</a></li>
+                        <li class="d-flex gap-1 align-items-center"><img class="profile-img-repo"
+                                src="./images/profile.png" alt=""><a href="#"
+                                class="text-decoration-none text-black d-block py-1">abhinavashokm/chatgpt-ui</a></li>
+                        <li><a href="#" class="text-decoration-none d-block py-1 text-primary text-muted fs-6 ">show
+                                more</a></li>
+                    </ul>
+                </div>
             </div>
 
             <!-- Center Feed (Home content) -->
-            <div class="col-lg-6 col-md-6 px-4">
+            <div class="col-xl-6 col-md-9 px-4">
                 <h5 class="mb-3 fw-bold">Home</h5>
 
                 <!-- Ask copilot -->
@@ -94,9 +96,10 @@
                     <li class="border">Make a pong game</li>
                 </ul>
 
+                <!--FEED-->
                 <div class="feeds mt-5">
                     <h6 class="fw-bold">Feed</h6>
-                    <!-- Example feed card -->
+
 
                     <div class="card mb-3">
                         <div class="card-body">
@@ -140,7 +143,7 @@
                                     <img class="feed-profile-images" src="./images/person2.png" alt="">
                                     <div class="d-flex justify-content-between">
                                         <div>
-                                            <strong>Naushidh</strong> 
+                                            <strong>Naushidh</strong>
                                             <div class="text-muted small mt-1 d-flex gap-2"><span>2
                                                     repositories</span><span>1 follower</span></div>
                                         </div>
@@ -184,12 +187,37 @@
                             <div class="text-muted small mt-1">4 hours ago</div>
                         </div>
                     </div>
+
+                    <footer class="d-flex flex-column-reverse flex-lg-row mb-5 justify-content-between align-items-center" style="font-size: 12px;">
+                        <div class="brand d-flex gap-2 align-items-center">
+                            <i class="bi bi-github fs-5"></i>
+                            <a class="text-muted text-decoration-none" href="">&copy; 2025 GitHub, Inc. </a>
+                        </div>
+                        <nav class="d-flex flex-md-column 
+                                    gap-3  gap-md-1 
+                                    align-items-center border-0 me-lg-5">
+                            <div class="top-navs d-flex gap-3">
+                                <a class="text-muted text-decoration-none " href="">Terms</a>
+                                <a class="text-muted text-decoration-none " href="">Privacy</a>
+                                <a class="text-muted text-decoration-none " href="">Security</a>
+                                <a class="text-muted text-decoration-none " href="">Status</a>
+                                <a class="text-muted text-decoration-none " href="">Docs</a>
+                                <a class="text-muted text-decoration-none " href="">Contact</a>
+                                <a class="text-muted text-decoration-none " href="">Manage Cookies</a>
+                            </div>
+                            <div class="bottom-navs">
+                                <a class="text-muted text-decoration-none" href="">Do not share my personal
+                                    information</a>
+                            </div>
+                        </nav>
+                    </footer>
+
                 </div>
 
             </div>
 
             <!-- Right Sidebar (Latest Changes / News) -->
-            <div class="col-lg-3 col-md-3 px-4">
+            <div class="col-xl-3 px-4 d-none d-xl-block">
                 <div class="px-3 border rounded-3 py-4">
                     <h6 class="text-muted mb-3">Latest changes</h6>
 
@@ -209,6 +237,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
