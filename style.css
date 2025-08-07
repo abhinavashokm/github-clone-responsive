@@ -36,6 +36,18 @@ nav i {
     /*think again*/
 }
 
+.search input{
+    width: 250px;
+    padding-left: 34px;
+    color: black;
+}
+.search i{
+    font-size: 14px;
+}
+.johny-div img{
+    height: 24px;
+}
+
 /*FEED*/
 .copilot-suggestions li {
     padding: 10px;
@@ -82,5 +94,8 @@ strong {
     border-radius: 50%;
 }
 .feed-ranking{
+    font-size: 14px;
+}
+button i{
     font-size: 14px;
 }
