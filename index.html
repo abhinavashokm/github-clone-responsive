@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub-Clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!--For bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top px-3 py-2">
+        <div class="container-fluid">
+            <!-- GitHub Logo -->
+            <a class="navbar-brand d-flex align-items-center me-3" href="#">
+                <i class="bi bi-github fs-2"></i>
+            </a>
+
+            <!-- Navigation links (optional) -->
+            <ul class="navbar-nav d-none d-lg-flex me-3">
+                <li class="nav-item"><a class="fw-bold px-2 dashboard-title" href="#">Dashboard</a></li>
+            </ul>
+
+            <!-- Right-side content -->
+            <div class="d-flex align-items-center ms-auto gap-3">
+                <!-- Search box -->
+                <form class="d-none d-md-block" role="search">
+                    <input class="form-control form-control-sm bg-body-secondary border-0 text-white rounded-1"
+                        type="search" placeholder="Type / to search" aria-label="Search" style="width: 250px;">
+                </form>
+
+                <!-- Icons -->
+                <a class="nav-link px-2 text-white" href="#"><i class="bi bi-bell fs-5"></i></a>
+                <a class="nav-link px-2 text-white" href="#"><i class="bi bi-plus-lg fs-5"></i></a>
+                <a class="nav-link px-2 text-white" href="#"><img class="profile-img" src="./images/profile.png"
+                        alt=""></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+
+
+    <!-- Main GitHub-style 3-column layout -->
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!-- Left Sidebar (Repositories list) -->
+            <div class="col-lg-3 col-md-3 border-end px-3">
+                <div class="d-flex align-items-center justify-content-between ">
+                    <h6 class="fw-bold mb-3">Top repositories</h6>
+                    <button class="btn btn-success btn-sm" type="button">New</button>
+                </div>
+                <form class="my-2" role="search">
+                    <input class="form-control form-control-sm bg-body-secondary border-1 text-white rounded-1"
+                        type="search" placeholder="Find a repository..." aria-label="Search">
+                </form>
+
+                <ul class="list-unstyled d-flex flex-column gap-1">
+                    <li class="d-flex gap-1 align-items-center"><img class="profile-img-repo" src="./images/profile.png"
+                            alt=""><a href="#"
+                            class="text-decoration-none text-black d-block py-1">abhinavashokm/gpt</a></li>
+                    <li class="d-flex gap-1 align-items-center"><img class="profile-img-repo" src="./images/profile.png"
+                            alt=""><a href="#"
+                            class="text-decoration-none text-black d-block py-1">abhinavashokm/whisper</a></li>
+                    <li class="d-flex gap-1 align-items-center"><img class="profile-img-repo" src="./images/profile.png"
+                            alt=""><a href="#"
+                            class="text-decoration-none text-black d-block py-1">abhinavashokm/clip</a></li>
+                    <li class="d-flex gap-1 align-items-center"><img class="profile-img-repo" src="./images/profile.png"
+                            alt=""><a href="#"
+                            class="text-decoration-none text-black d-block py-1">abhinavashokm/chatgpt-ui</a></li>
+                    <li><a href="#" class="text-decoration-none d-block py-1 text-primary text-muted fs-6 ">show
+                            more</a></li>
+                </ul>
+            </div>
+
+            <!-- Center Feed (Home content) -->
+            <div class="col-lg-6 col-md-6 px-4">
+                <h5 class="mb-3 fw-bold">Home</h5>
+
+                <!-- Ask copilot -->
+                <form class="my-2" role="search">
+                    <input class="form-control form-control-sm bg-body-light border-1 text-white rounded-3 py-2"
+                        type="search" placeholder="Ask Copilot" aria-label="Search">
+                </form>
+
+                <ul class="list-unstyled d-flex gap-3 rounded-3 mt-3 copilot-suggestions">
+                    <li class="border">Suggest next stop for an issue</li>
+                    <li class="border">Make a pong game</li>
+                </ul>
+
+                <div class="feeds mt-5">
+                    <h6 class="fw-bold">Feed</h6>
+                    <!-- Example feed card -->
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="d-flex gap-2">
+                                <img class="feed-profile-images" src="./images/person1.jpeg" alt="">
+                                <div>
+                                    <strong>saimanikumarpilla</strong> <span class="text-muted">followed</span>
+                                    <div class="text-muted small mt-1">2 hours ago</div>
+                                </div>
+
+                            </div>
+                            <div class="bg-body-secondary d-flex justify-content-between border p-3 rounded-3 mt-3">
+                                <div class="d-flex gap-2">
+                                    <img class="feed-profile-images" src="./images/person1.jpeg" alt="">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <strong>saimanikumarpilla</strong> <span
+                                                class="text-muted">Avinash7Dhoni</span>
+                                            <div class="text-muted small mt-1 d-flex gap-2"><span>2
+                                                    repositories</span><span>1 follower</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-sm border" type="button">follow</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="d-flex gap-2">
+                                <img class="feed-profile-images" src="./images/person2.png" alt="">
+                                <div>
+                                    <strong>Naushidh</strong> <span class="text-muted">started following you</span>
+                                    <div class="text-muted small mt-1">yesterday</div>
+                                </div>
+
+                            </div>
+                            <div class="bg-body-secondary d-flex justify-content-between border p-3 rounded-3 mt-3">
+                                <div class="d-flex gap-2">
+                                    <img class="feed-profile-images" src="./images/person2.png" alt="">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <strong>Naushidh</strong> 
+                                            <div class="text-muted small mt-1 d-flex gap-2"><span>2
+                                                    repositories</span><span>1 follower</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-sm border" type="button">unfollow</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="d-flex gap-2">
+                                <img class="feed-profile-images" src="./images/person1.jpeg" alt="">
+                                <div>
+                                    <strong>saimanikumarpilla</strong> <span class="text-muted">followed</span>
+                                    <div class="text-muted small mt-1">2 hours ago</div>
+                                </div>
+
+                            </div>
+                            <div class="bg-body-secondary d-flex justify-content-between border p-3 rounded-3 mt-3">
+                                <div class="d-flex gap-2">
+                                    <img class="feed-profile-images" src="./images/person2.png" alt="">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <strong>saimanikumarpilla</strong> <span
+                                                class="text-muted">Avinash7Dhoni</span>
+                                            <div class="text-muted small mt-1 d-flex gap-2"><span>2
+                                                    repositories</span><span>1 follower</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-sm border" type="button">follow</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <strong>abhinavashokm/whisper</strong> received a new pull request.
+                            <div class="text-muted small mt-1">4 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Sidebar (Latest Changes / News) -->
+            <div class="col-lg-3 col-md-3 px-4">
+                <div class="px-3 border rounded-3 py-4">
+                    <h6 class="text-muted mb-3">Latest changes</h6>
+
+                    <div class="mb-3">
+                        <strong>GitHub Copilot Chat now in VS Code</strong>
+                        <p class="small text-muted">Explore new AI-powered coding help directly in your editor.</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <strong>Improved pull request UI</strong>
+                        <p class="small text-muted">Pull request pages now have faster navigation and better layout.</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <strong>Security updates simplified</strong>
+                        <p class="small text-muted">New automated dependency update flow now available.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
